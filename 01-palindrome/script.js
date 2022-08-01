@@ -14,10 +14,10 @@
  */
 
 function palindrome(str) {
-  let clean_str = str.replace(/[^a-zа-яё]/gi, '')
+  const cleanStr = str.replace(/[^a-zа-яё]/gi, '')
   return (
-    clean_str.split('').reverse().join('').toLowerCase() ===
-    clean_str.toLowerCase()
+    cleanStr.split('').reverse().join('').toLowerCase() ===
+    cleanStr.toLowerCase()
   )
 }
 
